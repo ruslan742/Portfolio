@@ -21,7 +21,7 @@ const Contact = () => {
     setForm({ ...form, [name]: value });
   };
   const handleSubmit = (e) => {
-    e.preventDeafault();
+    e.preventDefault();
     setLoading(true);
     emailjs.send(
       'service_06ydlko',

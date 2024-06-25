@@ -31,7 +31,7 @@ const Navbar = () => {
             text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
-              <a href={`${link.id}`}> {link.title}</a>
+              <a href={`#${link.id}`}> {link.title}</a>
             </li>
           ))}
         </ul>
@@ -54,7 +54,7 @@ const Navbar = () => {
                   onClick={() => {setToggle(!toggle);
                   setActive(link.title)}}
                 >
-                  <a href={`${link.id}`}> {link.title}</a>
+                  <a href={`#${link.id}`}> {link.title}</a>
                 </li>
               ))}
             </ul>
